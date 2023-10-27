@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,8 +12,23 @@
             background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
+            text-align: left;
             margin: 20px auto;
-            max-width: 600px;
+            max-width: 750px;
+            /* display: flex;  Use flexbox to align items */
+            /*flex-direction: row;  Horizontal layout */
+            /*align-items: center; Vertically center items */
+        }
+        .containeri {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            margin: 20px auto;
+            max-width: 750px;
+            display: flex; /* Use flexbox to align items */
+            flex-direction: row; /* Horizontal layout */
+            align-items: center; /* Vertically center items */
         }
         h1 {
             color: #333;
@@ -24,22 +37,98 @@
             font-size: 18px;
             color: #555;
         }
+        ul {
+             /* Remove default bullet points */
+            padding-left: 0; /* Remove default padding */
+        }
+        ul ul {
+            padding-left: 20px; /* Add padding to the subpoints */
+        }
+        ul li {
+            margin-top: 5px;
+            margin-bottom: 5px; /* Add space between list items */
+        }
+        img {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000;
+        }
     </style>
 </head>
 <body>
+    <h1>Hello, welcome to Mechatronics Applications Station!</h1>
+    <p>Please find below the Standard Operating Procedure (SOP) for this station</p>
     <div class="container">
-        <h1>Hello, welcome to Mechatronics Applications Station!</h1>
-        <p>Please find below the Standard Operating Procedure (SOP) for this station:</p>
-        <ol>
-            <p>Line conveyor prototype
-                Application of Colour sensor, Metal/Non Metal Sensor, Orientation Sensor
-                PLC Logic
-                Troubleshooting
-                Program Debugging
-                Input/Output wiring
-                
-                </p>
-        </ol>
+        <ul>
+            PLCs are similar to a microcontroller
+            <li>Microprocessor Based</li>
+            <li>Onboard Memory for Storing Programs</li>
+            <li>Special Programming Language: Ladder Logic</li>
+            <li>I/O ports</li>
+        </ul>
+        
     </div>
+    <div class="containeri">
+        <ul>
+            The components in a PLC are  
+            <li>Input Modules: Input Signals can be AC or DC, Analog or Digital</li>
+            <li>Output Modules: Outputs are either AC or DC Analog Signals (Although it is possible to 'Construct' Digital Outputs)</li>
+        </ul>
+        <img src="PLC1.png" alt="plc">
+    </div>
+    <div class="containeri">
+        <ul>
+            Input Modules:  
+            <li>Switches and Push buttons</li>
+            <li>Sensing devices (Digital):</li>
+            <ul>
+                <li>Limit Switches</li>
+                <li>Photoelectric Sensors</li>
+                <li>Proximity Sensors</li>
+            </ul>
+            <li>Condition devices (Analog):</li>
+            <ul>
+                <li>Temperature Switches</li>
+                <li>Pressure Switches</li>
+                <li>Level Switches</li>
+                <li>Vaccum Switches</li>
+                <li>Float Switches</li>
+                <li>Encoders</li>    
+            </ul>
+        </ul>
+        <img src="PLC2.png" alt="plc">
+    </div>
+    <div class="containeri">
+        <ul>
+            Output Modules:  
+            <li>Sensing devices (Digital):</li>
+            <ul>
+                <li>Relays</li>
+                <li>Contactors</li>
+                <li>Lamps</li>
+                <li>Hooter</li>
+                <li>Led</li>
+                <li>Solenoid Valves</li>
+                <li>Coils</li>
+            </ul>
+            <li>Condition Sensors (Analog):</li>
+            <ul>
+                <li>Analog Ports</li>
+                <li>DC Drives</li>
+                <li>Actuators</li>
+                <li>Positioner</li>
+            </ul>
+        </ul>
+        <img src="PLC3.png" alt="plc">
+    </div>
+    <div class="containeri">
+        <ul>
+            Gate Logic  
+            <li>AND Gate Logic</li>
+            <img src="PLC5.png" alt="plc">            
+        </ul>
+        <img src="PLC4.gif" alt="plc">
+    </div>
+
 </body>
 </html>
