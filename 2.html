@@ -66,7 +66,7 @@
             <li>Special Programming Language: Ladder Logic</li>
             <li>I/O ports</li>
         </ul>
-        
+
     </div>
     <div class="containeri">
         <ul>
@@ -125,9 +125,78 @@
         <ul>
             Gate Logic  
             <li>AND Gate Logic</li>
-            <img src="PLC5.png" alt="plc">            
+            <!-- <img src="PLC5.png" alt="plc">             -->
         </ul>
-        <img src="PLC4.gif" alt="plc">
+        <img src="PLC5.png" alt="plc">
+    </div>
+    <div class="containeri">
+        <ul>
+            Gate Logic  
+            <li>OR Gate Logic</li>
+            <!-- <img src="PLC5.png" alt="plc">             -->
+        </ul>
+        <img src="PLC6.png" alt="plc">
+    </div>
+    <div class="containeri">
+        <ul>
+            Gate Logic  
+            <li>NOT Gate Logic</li>
+            <!-- <img src="PLC5.png" alt="plc">             -->
+        </ul>
+        <img src="PLC7.png" alt="plc">
+    </div>
+    <div class="containeri">
+        <ul>
+            Gate Logic  
+            <li>NAND Gate Logic</li>
+            <!-- <img src="PLC5.png" alt="plc">             -->
+        </ul>
+        <img src="PLC8.png" alt="plc">
+    </div>
+    <div class="containeri">
+        <ul>
+            Gate Logic  
+            <li>NOR Gate Logic</li>
+            <!-- <img src="PLC5.png" alt="plc">             -->
+        </ul>
+        <img src="PLC9.png" alt="plc">
+    </div>
+    <div class="containeri">
+        <ul>
+            Gate Logic  
+            <li>XOR Gate Logic</li>
+            <!-- <img src="PLC5.png" alt="plc">             -->
+        </ul>
+        <img src="PLC10.png" alt="plc">
+    </div>
+    <div class="container">
+        <h1>Timer Types in PLC</h1>
+        <p>Timer instructions in a programmable logic controller (PLC) are used to introduce time delays in control processes. Here are some common timer types:</p>
+        <ul>
+            <li><strong>ON Delay Timer:</strong> Delays an instruction from becoming true for a specific period after activation.</li>
+            <li><strong>OFF Delay Timer:</strong> Keeps the output active for a predetermined time after the input signal turns off.</li>
+            <li><strong>Retentive Timer:</strong> Maintains the accumulated time value even through power loss or changes in the rung state.</li>
+        </ul>
+        <p>For instance, a <strong>TON Timer</strong> can be configured with the following attributes:</p>
+        <ul>
+            <li><strong>Tag:</strong> T1</li>
+            <li><strong>Inputs:</strong> IN (enables the timer) and PT (sets the preset time)</li>
+            <li><strong>Outputs:</strong> Q (timer output status) and ET (elapsed time)</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Counter Types in PLC</h1>
+        <p>Counters in programmable logic controllers (PLCs) are used to keep track of events. Here are two common counter types:</p>
+        <ul>
+            <li><strong>Up Counter:</strong> Counts up from the current value when a signal arrives at the input CU.</li>
+            <li><strong>Down Counter:</strong> Decrements by one from the preset value each time the input CD turns on.</li>
+        </ul>
+        <p>For example, a <strong>Counter</strong> can have the following attributes:</p>
+        <ul>
+            <li><strong>Tag:</strong> C1</li>
+            <li><strong>Inputs:</strong> CU/CD (signal for up/down counting), R (reset the counter), and PT (preset count)</li>
+            <li><strong>Outputs:</strong> Q (counter bit when PT equals CV) and CV (current value of the counter)</li>
+        </ul>
     </div>
 
 </body>
