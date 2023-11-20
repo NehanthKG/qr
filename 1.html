@@ -30,9 +30,25 @@
         <h1>Hello, welcome to Yolo Analytics Module!</h1>
         <p>Please find below the Standard Operating Procedure (SOP) for this station:</p>
         <ol>
-            <li>Step 1: [Add your step details here]</li>
+            <li>Step 1: Turn on TV/Monitor</li>
+            <li>Step 2: Turn on PC and make sure webcam is connected</li>
+            <li>Step 3: Sign into windows and run the file named 'run.bat' placed in the desktop</li>
+            <li>Step 4: Wait for 2-3 minutes and the Real-time detection will start</li>
+            
+            
             <!-- Add more steps if needed -->
         </ol>
+    </div>
+    <div class="container">
+        <ul>
+            <li>The 'run.bat' file runs the following 2 commands</li>
+            <ul>    
+                <li>"cd /d C:\Users\25021779\Desktop\code\yolov5\yolov5"<li>
+                <li>" python detect3.py --weights best.onnx --source "C:\Users\25021779\Downloads\choke_lane4.mp4"  --data data.yaml "</li>
+            </ul>
+            <li>Copy paste and run the above 2 commands (without quotes) separately using Command prompt (CMD) if incase 'run.bat' is missing or has been deleted</li>
+            <!-- Add more steps if needed -->
+        </ul>
     </div>
 </body>
 </html>
